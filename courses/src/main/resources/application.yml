@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: course
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  jmx:
+    enabled: false
+  datasource:
+    #driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vaga?allowPublicKeyRetrieval=true&sslMode=DISABLED
+    username: root
+    password: 123456
+jwt:
+  config:
+    type: signed
