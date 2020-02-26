@@ -1,3 +1,14 @@
+server:
+  port: 8082
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+    register-with-eureka: true
+
 spring:
   application:
     name: course
@@ -8,11 +19,9 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
-
   jmx:
     enabled: false
   datasource:
-    #driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/vaga?allowPublicKeyRetrieval=true&sslMode=DISABLED
     username: root
     password: 123456
