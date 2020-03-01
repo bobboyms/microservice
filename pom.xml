@@ -8,6 +8,7 @@
         <module>core</module>
         <module>discovery</module>
         <module>gateway</module>
+        <module>auth</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -19,14 +20,20 @@
     <artifactId>microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>microservice</name>
-    <description>Projeto para vaga de emprego</description>
+    <description>Projeto de arquitetura para microservices</description>
 
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
+        <nimbus-jose.version>7.0</nimbus-jose.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>${nimbus-jose.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -80,6 +87,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>

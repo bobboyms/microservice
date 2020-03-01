@@ -9,13 +9,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Getter
-@Setter
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-@EqualsAndHashCode
+@Data
 public class Course implements AbstractEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,4 +18,5 @@ public class Course implements AbstractEntity {
 
     @NotNull(message = "title is not nullable")
     private String title;
+
 }
