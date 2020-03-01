@@ -1,7 +1,7 @@
-package br.com.microservice.microservice.endpoint.services;
+package br.com.microservice.courses.endpoint.services;
 
-import br.com.microservice.microservice.model.Course;
-import br.com.microservice.microservice.repository.CourseRepository;
+import br.com.microservice.core.model.Course;
+import br.com.microservice.core.repository.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

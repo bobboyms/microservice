@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>courses</module>
+        <module>core</module>
         <module>discovery</module>
         <module>gateway</module>
     </modules>

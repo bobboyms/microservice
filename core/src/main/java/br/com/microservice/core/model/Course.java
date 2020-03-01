@@ -1,4 +1,4 @@
-package br.com.microservice.microservice.model;
+package br.com.microservice.core.model;
 
 import lombok.*;
 
